@@ -1,0 +1,157 @@
+dashboard_title: French Bakery Sales
+description: null
+css: ''
+slug: null
+certified_by: ''
+certification_details: ''
+published: false
+uuid: adbf5416-6cf1-4eca-8eb5-10a0814b966a
+position:
+  CHART-explore-102-1:
+    children: []
+    id: CHART-explore-102-1
+    meta:
+      chartId: 102
+      height: 53
+      sliceName: Total Revenue By Days (EUR)
+      uuid: 2d0f927a-4080-4f56-88f2-f6f2b57930e1
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-AkIKLzW2y
+    type: CHART
+  CHART-explore-103-1:
+    children: []
+    id: CHART-explore-103-1
+    meta:
+      chartId: 103
+      height: 50
+      sliceName: Total Revenue By Hours (EUR)
+      uuid: 5211fadc-3bfd-4cb0-9e8f-a00e5cba55f9
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-AkIKLzW2y
+    type: CHART
+  CHART-explore-104-1:
+    children: []
+    id: CHART-explore-104-1
+    meta:
+      chartId: 104
+      height: 59
+      sliceName: Most profitable products (EUR)
+      uuid: 6f045292-c8dc-4daf-a288-f7ce80acf08c
+      width: 9
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-AkIKLzW2y
+    type: CHART
+  CHART-explore-105-1:
+    children: []
+    id: CHART-explore-105-1
+    meta:
+      chartId: 105
+      height: 59
+      sliceName: Total Revenue (EUR)
+      uuid: 909257e2-38b9-4eb0-a21e-d25b356724af
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW--oyUZVYtb7
+    type: CHART
+  DASHBOARD_VERSION_KEY: v2
+  GRID_ID:
+    children:
+    - ROW-AkIKLzW2y
+    - ROW--oyUZVYtb7
+    id: GRID_ID
+    parents:
+    - ROOT_ID
+    type: GRID
+  HEADER_ID:
+    id: HEADER_ID
+    meta:
+      text: French Bakery Sales
+    type: HEADER
+  ROOT_ID:
+    children:
+    - GRID_ID
+    id: ROOT_ID
+    type: ROOT
+  ROW--oyUZVYtb7:
+    children:
+    - CHART-explore-102-1
+    - CHART-explore-103-1
+    id: ROW--oyUZVYtb7
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-AkIKLzW2y:
+    children:
+    - CHART-explore-105-1
+    - CHART-explore-104-1
+    id: ROW-AkIKLzW2y
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+metadata:
+  shared_label_colors:
+    Total Revenue: '#454E7C'
+    Revenue: '#1FA8C9'
+  color_scheme_domain: []
+  timed_refresh_immune_slices: []
+  expanded_slices: {}
+  refresh_frequency: 0
+  color_scheme: ''
+  label_colors: {}
+  cross_filters_enabled: true
+  chart_configuration:
+    '102':
+      id: 102
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 103
+        - 104
+        - 105
+    '103':
+      id: 103
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 102
+        - 104
+        - 105
+    '104':
+      id: 104
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 102
+        - 103
+        - 105
+  global_chart_configuration:
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    chartsInScope:
+    - 102
+    - 103
+    - 104
+    - 105
+  default_filters: '{}'
+  native_filter_configuration: []
+version: 1.0.0
